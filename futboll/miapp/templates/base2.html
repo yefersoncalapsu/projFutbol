@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/estilos.css">
+
+	<title>
+	{% block title %}
+	{% endblock %}
+	</title>
+</head>
+<body class="container">
+	<nav id="navbase1" >
+		<ul>
+			<h4 class="row">
+				<li id="linklogin" ><a href="{%url 'login'%}"> inicio  </a></li>
+				<li><a href="{%url 'registrar'%}"> Registarse </a></li>
+
+			</h4>	
+		</ul>
+	</nav>
+		<div id="conten1">
+			<h3>
+				{% block contenido %}
+				{% endblock %}
+			</h3>
+
+		</div>
+		<div id="nombrep">
+			<p>Sch<img src="https://icon-icons.com/icons2/630/PNG/512/soccer-ball_icon-icons.com_57913.png" width="65px">llSoccer<img src="https://image.flaticon.com/icons/svg/53/53362.svg" width="65px"></p>
+			<p><img src="https://icon-icons.com/icons2/67/PNG/512/soccersports_futbo_13301.png" width="260px"></p>
+			
+		</div>
+</body>
+</html>

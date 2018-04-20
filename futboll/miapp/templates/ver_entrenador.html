@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+	{{et.nombre}}
+{% endblock %}
+{% block contenido %}
+	
+		<h1>Info equipo</h1>
+		<p><b>Nombre:</b>  {{et.nombre}}</p>
+		<p><b>Correo:</b>  {{et.correo}}</p>
+		<p><b>Telefono:</b> {{et.telefono}}</p>
+		<br>
+		<button><a href=" {% url 'editar_entrenador' id_entr=et.id %} ">Editar</a></button>
+		<button><a href=" {% url 'eliminar_entrenador' id_entr=et.id %} ">Eliminar</a></button>
+
+		<a href="{% url 'entrenador' %}">Regresar a la Lista</a>
+	</div>
+	
+
+{% endblock %}

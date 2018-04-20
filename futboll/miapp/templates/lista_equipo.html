@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}
+equipo
+{% endblock %}
+<CENTER>
+	{% block contenido %}
+	<table  CELLPADDING=3 border="2" >
+		<h1>
+			lista de Equipos.
+		</h1>
+		<tr>
+			<h2>
+				<td><strong>NOMBRE</strong></td>
+				<td><strong>ENTRENADOR</strong></td>
+				
+
+
+			</h2>	
+		</tr>
+				<br/>
+
+		{% for 	eq in lista %}
+			
+
+				<tr>
+				<th><a href=" {% url 'ver_equipo' id_equi=eq.id %} ">{{eq.nombre}}</a></th>
+				<th>{{eq.entrenador}}</th>
+				
+				
+			</tr>
+
+		{% endfor %}
+
+	</table>
+</CENTER>
+
+{% endblock %}

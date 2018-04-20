@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+	{{f.nombre}}
+{% endblock %}
+{% block contenido %}
+	<h1>Informacion del Jugador</h1>
+	<div class="row">
+
+		<div class="col-md-7">
+			
+			<img src="/media/{{f.foto}}" width="300px" height="350px">
+		</div>
+		<div class="col-md-5">
+			<p><b>Nombre:</b>  {{f.nombre}}</p>
+			<p><b>Correo:</b>  {{f.correo}}</p>
+			<p><b>Telefono:</b> {{f.telefono}}</p>
+			<p><b>Equipo:</b> {{f.equipo}}</p>
+			<p><b>Academia:</b> {{f.academia}}</p>
+			<br>
+			<button><a href=" {% url 'editar_futbolista' id_futb=f.id %} ">Editar</a></button>
+			<button><a href=" {% url 'eliminar_futbolista' id_futb=f.id %} ">Eliminar</a></button>
+
+		</div>
+	</div>
+		<a href="{% url 'futbolista' %}">Regresar a la Lista</a>
+	</div>
+
+{% endblock %}

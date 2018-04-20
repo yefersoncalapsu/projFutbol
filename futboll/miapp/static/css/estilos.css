@@ -1,0 +1,115 @@
+body{
+	background-image:url(/static/img/futbol.jpg);
+	background-size:cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	
+
+}
+#navbase1{
+	color: transparent;
+	width: 400px;
+	margin-top: 20px;
+
+	font-family: "Homer Simpson", cursive ;
+	background-color: rgba(0,0,000,0.9);
+   	position:absolute;
+   	padding: 5px;
+
+
+}
+#navbase1 li a{
+	text-decoration: none;
+	color: #469000;
+
+}
+.text{
+	font-size: 80%;
+	width: 500px;
+	text-align: left;
+	background-color: rgba(0,0,000,0.6);
+   	position:absolute;
+   	padding: 30px;
+   	border: 0.6px;
+}
+#nombrep{
+	text-align: right;
+	padding-top: 200px;
+	font: oblique bold 500% cursive;
+	color: #000313;
+	
+
+}
+#linklogin{
+	margin-right: 150px;
+
+}
+#conten1{
+	margin-top: 180px;
+	text-align: right;
+	color: white;
+	font: oblique bold 120% cursive;
+	background-color: rgba(0,0,000,0.6);
+   	position:absolute;
+   	padding: 30px;
+   	border: 0.6px solid #000;
+
+}
+/*kjdsgkyajfgkecdshnx*/
+
+#nombrep2{
+	text-align: center;
+	padding-top: 20px;
+	font: oblique bold 500% cursive;
+	color: #000313;
+}
+#navbase2{
+	color: transparent;
+	width: 80%;
+	margin-top: 20px;
+	font-family: "Homer Simpson", cursive ;
+	background-color: rgba(0,0,000,0.9);
+   	position:absolute;
+   	padding: 5px;
+   	text-decoration: none;
+}
+#navbase2 li a{
+	text-decoration: none;
+	color: #469000;
+}
+#linklogout{
+	margin-left: 100px;
+}
+#conten2{
+	margin-top: 180px;
+	text-align: right;
+	margin-left: 250px;
+	margin-right: 250px;
+	color: white;
+	font: oblique bold 120% cursive;
+	background-color: rgba(0,0,000,0.6);
+   	position:absolute;
+   	padding: 30px;
+   	border: 0.6px solid #000;
+
+}
+#user{
+	color: white;
+	margin-left: 900px;
+}
+.menuagre{
+	position: absolute;
+	width: auto;
+	visibility: hidden;
+}
+.menuagre li a{
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	background-color: rgba(0,0,000,0.9);
+
+	
+}
+#navbase2 li:hover .menuagre{
+	visibility: visible;
+}

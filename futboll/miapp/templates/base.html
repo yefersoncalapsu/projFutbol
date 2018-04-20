@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/estilos.css">
+
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body class="container">
+	<div id="nombrep2">
+			<p>Sch<img src="https://icon-icons.com/icons2/630/PNG/512/soccer-ball_icon-icons.com_57913.png" width="65px">llSoccer<img src="https://image.flaticon.com/icons/svg/53/53362.svg" width="65px"></p>
+	</div>
+	<nav id="navbase2">
+			<h4><div id="user">{{user.username}}<img id="icono" src="https://image.freepik.com/free-icon/user-image-with-black-background_318-34564.jpg" width="45px"></div></h4>
+			<h4 class="row">
+
+				<li class="navbase1"><a href="{%url 'inicio2'%}">Inicio</a></li>
+				<li class="navbase1"><a href="{%url 'futbolista'%}">Futbolistas</a></li>
+				<li class="navbase1"><a href="{%url 'entrenador'%}">Entrenadores</a></li>
+				<li class="navbase1"><a href="{%url 'equipo'%}">Equipos</a></li>
+				<li class="navbase1"><a href="{%url 'academia'%}">Academias</a></li>
+
+				<li><a href="">AGREGAR</a>
+
+					<ul class="menuagre">
+						<li ><a href="{%url 'vista_agregar_futbolista'%}">Futbolistas</a></li>
+						<li ><a href="{%url 'vista_agregar_entrenador'%}">Entrenadores</a></li>
+						<li ><a href="{%url 'vista_agregar_equipo'%}">Equipos</a></li>
+						<li><a href="{%url 'vista_agregar_academia'%}">Academias</a></li>
+
+						
+					</ul>
+				</li>
+
+				<li id="linklogout"><a href="{%url 'logout'%}">Salir</a></li>
+			</h4>	
+		</ul>
+	</nav>
+		<div id="conten2">
+			<h5>
+				{% block contenido %}
+				{% endblock %}
+
+			</h5>
+			</div>
+</body>
+</html>

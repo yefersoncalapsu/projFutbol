@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}
+academias
+{% endblock %}
+<CENTER>
+	{% block contenido %}
+	<table  CELLPADDING=3 border="2" >
+		<h1>
+			lista de Academias
+		</h1>
+		<tr>
+			<h2>
+				<td><strong>NOMBRE</strong></td>
+				
+				
+
+
+			</h2>	
+		</tr>
+				<br/>
+
+		{% for a in lista %}
+			
+
+				<tr>
+				<th><a href=" {% url 'ver_academia' id_acad=a.id %} ">{{a.nombre}}</a></th>
+				
+				
+				
+			</tr>
+
+		{% endfor %}
+
+	</table>
+</CENTER>
+
+{% endblock %}

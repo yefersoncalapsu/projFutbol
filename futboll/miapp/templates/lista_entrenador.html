@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+entrenadores
+{% endblock %}
+<CENTER>
+	{% block contenido %}
+	<table  CELLPADDING=3 border="2" >
+		<h1>
+			lista de Entrenadores.
+		</h1>
+		<tr>
+			<h2>
+				<td><strong>NOMBRE</strong></td>
+				<td><strong>CORREO</strong></td>
+				<td><strong>TELEFONO</strong></td>
+				
+
+
+			</h2>	
+		</tr>
+				<br/>
+
+		{% for et in lista %}
+			
+
+				<tr>
+				<th><a href=" {% url 'ver_entrenador' id_entr=et.id %} ">{{et.nombre}}</a></th>
+				<th>{{et.correo}}</th>
+				<th>{{et.telefono}}</th>
+				
+				
+			</tr>
+
+		{% endfor %}
+
+	</table>
+</CENTER>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}
+futbolistas
+{% endblock %}
+<CENTER>
+	{% block contenido %}
+	<table  CELLPADDING=3 border="2" >
+		<h1>
+			lista de Futbolistas.
+		</h1>
+		<tr>
+			<h2>
+				<td><strong>NOMBRE</strong></td>
+				<td><strong>CORREO</strong></td>
+				<td><strong>TELEFONO</strong></td>
+				<td><strong>EQUIPO</strong></td>
+				<td><strong>ACADEMIA</strong></td>
+				
+
+
+			</h2>	
+		</tr>
+				<br/>
+
+		{% for f in lista %}
+			
+
+				<tr>
+				<th><a href=" {% url 'ver_futbolista' id_futb=f.id %} ">{{f.nombre}}</a></th>
+				<th>{{f.correo}}</th>
+				<th>{{f.telefono}}</th>
+				<th>{{f.equipo}}</th>
+				<th>{{f.academia}}</th>
+				
+				
+			</tr>
+
+		{% endfor %}
+
+	</table>
+</CENTER>
+
+{% endblock %}
